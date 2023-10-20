@@ -25,7 +25,7 @@
 
 // Third Method  ---------------------------
 
-var name;
+let name;
 
 name = "Sabre Alam"
 console.log(name);
