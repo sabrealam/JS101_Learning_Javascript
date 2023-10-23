@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+      'use strict';
+       
+ 
+       
+      function cal1(){
+        var k =   document.getElementById('fir').value;
+        var l =   document.getElementById('sec').value;
+        document.getElementById('wo').innerText = parseInt(k)+parseInt(l);
+           
+       }
+       function cal2(){
+        var k =   document.getElementById('fir').value;
+        var l =   document.getElementById('sec').value;
+        document.getElementById('wo').innerText = k-l;
+           
+       }
+       function cal3(){
+        var k =   document.getElementById('fir').value;
+        var l =   document.getElementById('sec').value;
+        document.getElementById('wo').innerText = k*l;
+           
+       }
+       function cal4(){
+        var k =   document.getElementById('fir').value;
+        var l =   document.getElementById('sec').value;
+        document.getElementById('wo').innerText = k/l;
+           
+       }
+      
+          
+           
+</script>
+<style>
+  body{
+    width : 1000px;
+    height: 650px; 
+    /* border:2px solid red; */
+    margin: auto;
+    
+      
+
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+    
+  }
+  .main{
+  width  : 65%;
+  height : 400px;
+  /* border : 2px solid blue; */
+  margin-top: 150px;
+  /* background-image: url('https://img.freepik.com/free-vector/accounting-audit-concept_1284-65155.jpg?size=626&ext=jpg&ga=GA1.1.1546815657.1692990221&semt=sph'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .7;
+  border-image-slice: fill; 
+  }
+  .main>div:first-child{
+    display : flex;
+    justify-content:space-between; 
+  }
+  .main>div:first-child>input{
+    width: 25%; 
+    height: 10px;
+    /* border:2px solid red; */
+    border-radius: 5px; 
+    font-size: 25px;
+    padding: 50px; 
+    background-color: transparent;
+  }
+  .main>div:nth-child(2){
+    margin-top: 75px;
+    display : flex;
+    /* border:2px solid red; */
+    
+  }
+  .main>div:nth-child(2)>div{
+    width : 20%;
+    height: 75px;
+    border:2px solid red;
+    border-radius: 5px;
+    display: grid;
+    place-items: center; 
+    cursor: pointer; 
+    font-weight: 800;
+    font-size: 35px;
+  }
+  
+  .main>div:last-child{
+      width: 90%;
+      height: 65px;
+      /* border:2px solid red;  */
+      margin-top: 50px;
+      border-radius: 5px;
+      display : flex;
+      justify-content:space-between;
+
+       
+          
+  }
+  .main>div:last-child>div:first-child{
+      width: 60%;
+      height: 60px;
+      border:2px solid rgb(119, 119, 119); 
+      border-radius: 5px;
+      text-align: center; 
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+  }
+  .main>div:last-child>div:last-child{
+      width: 20%;
+      height: 60px;
+      border:2px solid rgb(194, 194, 194);
+      border-radius: 5px;
+      display: grid;
+      place-items: center;
+      font-size: 30px;
+      cursor: pointer;
+      transition: ease-out .2s;
+
+  }
+  .main>div:last-child>div:last-child:active{
+    scale: 0.9;
+    background-color: rgb(0, 255, 200);
+  }
+</style>
+<body> 
+   
+  <div class="main">
+    
+    <div>           
+      <input type="number" id="fir">
+      <input type="number" id="sec">
+
+    </div>   
+
+    <div>
+      <div id="a" onclick="cal1()">+</div>
+      <div id="s" onclick="cal2()">-</div>
+      <div id="m" onclick="cal3()">*</div>
+      <div id="d" onclick="cal4()">/</div>
+    </div>
+    <div id="res">
+      <div><h2 id="wo"></h2></div>
+      <div>👍</div>
+    </div>
+  </div>
+  
+</body>
+</html>
